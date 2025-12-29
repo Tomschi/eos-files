@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # pacman
-if [! -d "/etc/pacman.d/hooks"]; then
+if [ ! -d "/etc/pacman.d/hooks" ]; then
   sudo mkdir -p /etc/pacman.d/hooks
 fi
 
