@@ -3,6 +3,9 @@
 # Get the directory where this script is located
 EOS_FILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+# yabsnap
+sudo cp $EOS_FILES_DIR/etc/yabsnap/configs/* /etc/yabsnap/configs/.
+
 # pacman
 if [ ! -d "/etc/pacman.d/hooks" ]; then
   sudo mkdir -p /etc/pacman.d/hooks
