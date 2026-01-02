@@ -1,11 +1,14 @@
 #!/usr/bin/env bash
 
+# Get the directory where this script is located
+EOS_FILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 # pacman
 if [ ! -d "/etc/pacman.d/hooks" ]; then
   sudo mkdir -p /etc/pacman.d/hooks
 fi
 
-sudo cp etc/pacman.d/hooks/* /etc/pacman.d/hooks/.
+sudo cp $EOS_FILES_DIR/etc/pacman.d/hooks/* /etc/pacman.d/hooks/.
 
 # podman
-sudo cp etc/containers/registries.conf.d/* /etc/containers/registries.conf.d/.
+sudo cp $EOS_FILES_DIR/etc/containers/registries.conf.d/* /etc/containers/registries.conf.d/.
