@@ -5,6 +5,7 @@ Operation = Upgrade
 Operation = Remove
 Target = grub
 Target = linux
+Target = linux-lts
 
 [Action]
 Description = Updating GRUB configuration...
