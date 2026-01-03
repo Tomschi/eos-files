@@ -4,9 +4,9 @@
 EOS_FILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # yabsnap
-#if [ ! -d "/etc/yabsnap/configs" ]; then
-#  sudo mkdir -p /etc/yabsnap/configs
-#fi
+if [ ! -d "/etc/yabsnap/configs" ]; then
+  sudo mkdir -p /etc/yabsnap/configs
+fi
 
 sudo cp $EOS_FILES_DIR/etc/yabsnap/configs/* /etc/yabsnap/configs/.
 
