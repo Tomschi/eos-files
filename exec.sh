@@ -19,3 +19,5 @@ sudo cp $EOS_FILES_DIR/etc/pacman.d/hooks/* /etc/pacman.d/hooks/.
 
 # podman
 sudo cp $EOS_FILES_DIR/etc/containers/registries.conf.d/* /etc/containers/registries.conf.d/.
+sudo cp $EOS_FILES_DIR/etc/containers/storage.conf /etc/containers/.
+
