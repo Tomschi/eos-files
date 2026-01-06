@@ -3,6 +3,10 @@
 # Get the directory where this script is located
 EOS_FILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+# set default editor
+sudo cp $EOS_FILES_DIR/etc/profile.d/editor.sh /etc/profile.d/.
+sudo cp $EOS_FILES_DIR/etc/sudoers.d/editor /etc/sudoers.d/.
+
 # yabsnap
 if [ ! -d "/etc/yabsnap/configs" ]; then
   sudo mkdir -p /etc/yabsnap/configs
